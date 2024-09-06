@@ -1,4 +1,12 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.a-td{
+    text-decoration: underline;
+    @media(max-width:992px){
+        text-decoration: none;
+    }
+}
+.w-213{
+    width: 213px;
+    @media(max-width:1400px){
+        width: 150px;
+    }
 }
