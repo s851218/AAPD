@@ -1,3 +1,9 @@
-.index-title {
-  font-size: 100px;
+.swiper.searchSwiper{
+    margin-right: 0;
+}
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
+    box-shadow:none;
+}
+.btn:focus-visible {
+    box-shadow:none;
 }

@@ -45,7 +45,6 @@
     $color-hover: $primary-400,
     $hover-background: $primary-50,
     $hover-border:  $primary-400,
-    $hover-color: $white,
     $active-background: $primary-400,
     $active-border: $primary-200,
     $active-color: $white
@@ -56,16 +55,20 @@
     border-color: $primary-200;
     background-color: $primary-200;
   }
+  &:focus{
+    background: $primary-400;
+    color: $white;
+    border-color: $primary-200;
+  }
 }
 
 .btn-outline-secondary {
   @include button-outline-variant(
     $background: $white,
     $color: $secondary-900,
-    $color-hover: $secondary-600,
+    $color-hover: $white,
     $hover-background: $secondary-600,
     $hover-border:  $secondary-200,
-    $hover-color: $white,
     $active-background: $secondary-800,
     $active-border: $secondary-300,
     $active-color: $white
@@ -76,9 +79,14 @@
     border-color: $secondary-200;
     background-color: $secondary-200;
   }
+  &:focus{
+    background: $secondary-800;
+    color: $white;
+    border-color: $secondary-300;
+  }
 }
 
-.btn-text {
+.btn-custom {
   @include button-variant(
     $background: $white,
     $border: $gray-200,
@@ -100,5 +108,32 @@
     background: #FFFFFF;
     color: $primary-600;
     border-color: $gray-100;
+  }
+}
+
+.btn-text {
+  border:0px;
+  @include button-variant(
+    $background: $secondary-50,
+    $border: $secondary-50,
+    $color: $gray-900,
+    $hover-background: $secondary-50,
+    $hover-border: $secondary-50,
+    $hover-color: $gray-500,
+    $active-background: $white,
+    $active-border: $gray-700,
+    $active-color: $gray-900,
+    $disabled-background: $gray-300,
+    $disabled-border: $gray-300,
+    $disabled-color: $white
+  );
+  &:hover{
+    border:0px;
+  }
+  &:focus{
+    color:$gray-400;
+  }
+  &:active{
+    border:1px solid;
   }
 }

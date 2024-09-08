@@ -40,9 +40,8 @@
   $background,  //新增
   $color,
   $color-hover: color-contrast($color),
-  $hover-background: $color,
+  $hover-background: color-contrast($hover-background),
   $hover-border:  $color,
-  $hover-color: color-contrast($hover-background),
   $active-background: $color,
   $active-border: $color,
   $active-color: color-contrast($active-background)

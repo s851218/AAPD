@@ -8,66 +8,207 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container"><h1 class="index-title"><i class="ph ph-airplane-taxiing"></i>我是首頁</h1></div>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+    <section class="banner">
+      <div class="pb-6 pb-lg-8"></div>
+    </section>
+    <section class="feature">
+      <div class="container">
+        <div class="py-6 py-lg-8 border-bottom border-top border-gray-4">
+          <div class="swiper featureSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <picture>
+                    <source
+                      srcset="https://fakeimg.pl/156x144/"
+                      media="(max-width:992px)"
+                      class="card-img"
+                    />
+                    <img src="https://fakeimg.pl/322x186/" class="card-img" />
+                  </picture>
+                  <div class="card-img-overlay p-0 d-flex">
+                    <h3 class="ms-5 mb-4 p-0 fs-7 align-self-end">智慧廚房</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <picture>
+                    <source
+                      srcset="https://fakeimg.pl/156x144/"
+                      media="(max-width:992px)"
+                      class="card-img"
+                    />
+                    <img src="https://fakeimg.pl/322x186/" class="card-img" />
+                  </picture>
+                  <div class="card-img-overlay p-0 d-flex">
+                    <h3 class="ms-5 mb-4 p-0 fs-7 align-self-end">居家生活管家</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <picture>
+                    <source
+                      srcset="https://fakeimg.pl/156x144/"
+                      media="(max-width:992px)"
+                      class="card-img"
+                    />
+                    <img src="https://fakeimg.pl/322x186/" class="card-img" />
+                  </picture>
+                  <div class="card-img-overlay p-0 d-flex">
+                    <h3 class="ms-5 mb-4 p-0 fs-7 align-self-end">生活娛樂</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <picture>
+                    <source
+                      srcset="https://fakeimg.pl/156x144/"
+                      media="(max-width:992px)"
+                      class="card-img"
+                    />
+                    <img src="https://fakeimg.pl/322x186/" class="card-img" />
+                  </picture>
+                  <div class="card-img-overlay p-0 d-flex">
+                    <h3 class="ms-5 mb-4 p-0 fs-7 align-self-end">生活安全</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-
-    <!-- swiper 元件test -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
-        <div class="swiper-slide"><img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" /></div>
+    </section>
+    <section class="search">
+      <div class="container">
+        <div class="py-6 py-lg-8 border-bottom border-gray-4">
+          <div class="d-flex flex-column flex-xxl-row justify-content-xxl-between align-items-xxl-center mb-6">
+            <div>
+              <button class="btn btn-outline-secondary fs-xs fs-lg-base py-2 py-xl-3 px-5 rounded-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="ph ph-funnel-simple fs-6 fs-lg-5 me-2 align-bottom"></i>篩選器
+              </button>
+            </div>
+            <div class="swiper searchSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>所有商品</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能照明</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能窗簾</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能恆溫</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能插座和開關</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能電視</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能廚房電器</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button"><p>智能音箱</p></button>
+                    <i class="ph ph-line-vertical"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide w-auto">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-text py-2 px-4" type="button">更多<i class="ph ph-caret-down fs-5 align-bottom ms-2 d-none d-lg-inline-block"></i></button>
+                  </div>
+                  <div class="nav-item dropdown d-none"> <!-- 測試swiper用dropdown-->
+                    <a class="dropdown-togglebtn btn btn-text py-2 px-3 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">更多
+                      <i class="ph ph-caret-down fs-5 align-bottom ms-2 d-none d-lg-inline-block"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-0">
+                      <li><a class="dropdown-item" href="#">item-1</a></li>
+                      <li><a class="dropdown-item" href="#">item-2</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">item-3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body border-0 p-0">
+              <div class="row d-flex flex-column flex-lg-row">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="">搜尋類別</p>
+                    <a href="#" class="fw-normal fs-sm text-gray-5">清除</a>
+                  </div>
+                  <form class="d-flex" role="search">
+                    <div class="position-relative w-100">
+                      <input class="form-control rounded-5 border-gray-9 py-4 ps-11" type="search" placeholder="Ai智能電視" aria-label="Search"/>
+                      <i class="ph ph-magnifying-glass text-gray-9 position-absolute top-50 start-0 translate-middle-y ms-3 fs-5"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="">評價篩選</p>
+                    <a href="#" class="fw-normal fs-sm text-gray-5">清除</a>
+                  </div>
+                  <form class="d-flex" role="search">
+                    <div class="position-relative w-100">
+                      <input class="form-control rounded-5 border-gray-9 py-4 ps-11" type="search" placeholder="從評價高到低" aria-label="Search"/>
+                      <i class="ph ph-magnifying-glass text-gray-9 position-absolute top-50 start-0 translate-middle-y ms-3 fs-5"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="">價格篩選</p>
+                    <a href="#" class="fw-normal fs-sm text-gray-5">清除</a>
+                  </div>
+                  <form class="d-flex" role="search">
+                    <div class="position-relative w-100">
+                      <input class="form-control rounded-5 border-gray-9 py-4 ps-11" type="search" placeholder="從價格高到低" aria-label="Search"/>
+                      <i class="ph ph-magnifying-glass text-gray-9 position-absolute top-50 start-0 translate-middle-y ms-3 fs-5"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end align-items-end">
+                  <button class="btn btn-primary py-3 px-5 rounded-5 fs-xs fs-lg-base w-100 w-lg-auto"><i class="ph ph-magnifying-glass fs-6 fs-lg-5 text-white me-2 align-bottom"></i>立即搜尋</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
+    
 
     <%- include('./layout/footer'); -%>
 
