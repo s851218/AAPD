@@ -1,9 +1,21 @@
 .swiper.searchSwiper{
     margin-right: 0;
+    @media(max-width:1400px){
+        margin-right: auto;
+        margin-left: 0;
+    }
 }
 .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
     box-shadow:none;
 }
 .btn:focus-visible {
     box-shadow:none;
+}
+.searchSwiper>.swiper-wrapper{
+   @media(max-width:768px){
+    width: 516px !important;
+   }
+   @media(max-width:576px){
+    max-width: 336px !important;
+   }
 }

@@ -65,12 +65,13 @@ const featureSwiper = new Swiper(".featureSwiper", {
 
 
 const searchSwiper = new Swiper(".searchSwiper", {
-  slidesPerView: 2, // 一次呈現幾張
+  slidesPerView: 3, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
-  spaceBetween: 8, // 每個內容之間的間隔為 24px
+  spaceBetween: 0, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
 
-  loop: false, // 循環播放
+  loop: true, // 循環播放
+  freeMode: true,
 
   // 分頁展示方式
   pagination: {
@@ -86,11 +87,26 @@ const searchSwiper = new Swiper(".searchSwiper", {
 
   //RWD
   breakpoints: {
-    992: {
+    576: {
+      slidesPerView: 5, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
+      spaceBetween: 0, // 每個內容之間的間隔為 48px
+      loop: true, // 循環播放
+      freeMode: true,
+    },
+    768: {
       slidesPerView: 6, // 一次呈現幾張
       slidesPerGroup: 1, // 一個群組內有幾張投影片
       spaceBetween: 0, // 每個內容之間的間隔為 48px
-      loop: false,
+      loop: true, // 循環播放
+      freeMode: true,
+    },
+    992: {
+      slidesPerView: 8, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
+      spaceBetween: 0, // 每個內容之間的間隔為 48px
+      loop: true, // 循環播放
+      freeMode: true,
     },
     1200: {
       slidesPerView: 9, // 一次呈現幾張
@@ -102,7 +118,7 @@ const searchSwiper = new Swiper(".searchSwiper", {
 });
 
 const indexSwiper1 = new Swiper(".indexSwiper1", {
-  slidesPerView: 2, // 一次呈現幾張
+  slidesPerView: 1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -124,16 +140,16 @@ const indexSwiper1 = new Swiper(".indexSwiper1", {
   //RWD
   breakpoints: {
     992: {
-      slidesPerView: 4, // 一次呈現幾張
-      slidesPerGroup: 4, // 一個群組內有幾張投影片
+      slidesPerView: 3, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
       spaceBetween: 24, // 每個內容之間的間隔為 48px
-      loop: false,
+      loop: true,
     },
   },
 });
 
 const indexSwiper2 = new Swiper(".indexSwiper2", {
-  slidesPerView: 2, // 一次呈現幾張
+  slidesPerView: 1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -155,16 +171,16 @@ const indexSwiper2 = new Swiper(".indexSwiper2", {
   //RWD
   breakpoints: {
     992: {
-      slidesPerView: 4, // 一次呈現幾張
-      slidesPerGroup: 4, // 一個群組內有幾張投影片
+      slidesPerView: 3, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
       spaceBetween: 24, // 每個內容之間的間隔為 48px
-      loop: false,
+      loop: true,
     },
   },
 });
 
 const indexSwiper3 = new Swiper(".indexSwiper3", {
-  slidesPerView: 2, // 一次呈現幾張
+  slidesPerView: 1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -186,10 +202,10 @@ const indexSwiper3 = new Swiper(".indexSwiper3", {
   //RWD
   breakpoints: {
     992: {
-      slidesPerView: 4, // 一次呈現幾張
-      slidesPerGroup: 4, // 一個群組內有幾張投影片
+      slidesPerView: 3, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
       spaceBetween: 24, // 每個內容之間的間隔為 48px
-      loop: false,
+      loop: true,
     },
   },
 });
