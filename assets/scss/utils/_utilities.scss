@@ -17,6 +17,7 @@ $utilities: map-merge(
       class: fw,
       values: (
         normal: $font-weight-normal, // 400
+        medium: $font-weight-medium, // 500
         bold: $font-weight-semibold, // 600
       )
     ),
