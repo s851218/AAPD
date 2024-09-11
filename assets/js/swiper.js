@@ -4,22 +4,22 @@ import Swiper from "swiper/bundle";
 
 // test
 
-const mySwiper2 = new Swiper('.mySwiper2', {
+const mySwiper2 = new Swiper(".mySwiper2", {
   // 循環播放
   loop: true,
-  // 左右箭頭    
+  // 左右箭頭
   navigation: {
-    prevEl: '.mySwiper2-button-prev',
-    nextEl: '.mySwiper2-button-next',
+    prevEl: ".mySwiper2-button-prev",
+    nextEl: ".mySwiper2-button-next",
   },
   slidesPerView: 1,
   centeredSlides: true, //active slide 置中
 
   breakpoints: {
     768: {
-      slidesPerView: 1.2, // slide 預覽 
+      slidesPerView: 1.2, // slide 預覽
       spaceBetween: 40, // slide 間距
-    }
+    },
   },
   // 自動撥放
   autoplay: {
@@ -27,8 +27,6 @@ const mySwiper2 = new Swiper('.mySwiper2', {
   },
 });
 // 參考文章:https://blog.csdn.net/qq_42855675/article/details/112850049
-
-
 
 // 首頁
 
@@ -62,7 +60,6 @@ const featureSwiper = new Swiper(".featureSwiper", {
     },
   },
 });
-
 
 const searchSwiper = new Swiper(".searchSwiper", {
   slidesPerView: 3, // 一次呈現幾張
@@ -207,5 +204,25 @@ const indexSwiper3 = new Swiper(".indexSwiper3", {
       spaceBetween: 24, // 每個內容之間的間隔為 48px
       loop: true,
     },
+  },
+});
+
+// product-info.html
+// 產品規格 section-1
+const productImageSwiper = new Swiper(".productImageSwiper", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 8, // 每個內容之間的間隔為 8px
+    },
+  },
+});
+// 上方所展示的大張圖片的swiper
+const productImageSwiper2 = new Swiper(".productImageSwiper2", {
+  spaceBetween: 4,
+  thumbs: {
+    swiper: productImageSwiper,
   },
 });
