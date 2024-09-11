@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品資訊</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+    <!-- 產品規格 -->
+    <!-- section-1 -->
+    <section class="pt-6 pb-8 py-lg-8">
+      <div class="container">
+        <div class="d-flex justify-content-between mb-6 mb-lg-8">
+          <section>
+            <a class="text-primary-9" href="#">
+              <i class="ph ph-arrow-left fs-5 align-bottom me-3"></i
+              ><span>返回</span>
+            </a>
+          </section>
+          <section>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item fs-xs fs-lg-sm">
+                  <a class="breadcrumb-item-hover" href="#">首頁</a>
+                </li>
+                <li class="breadcrumb-item fs-xs fs-lg-sm">
+                  <a class="breadcrumb-item-hover" href="#">綠色節能智能窗簾</a>
+                </li>
+                <li
+                  class="breadcrumb-item fs-xs fs-lg-sm active"
+                  aria-current="page"
+                >
+                  EcoSense 光控智能窗簾
+                </li>
+              </ol>
+            </nav>
+          </section>
+        </div>
+        <div class="row row-cols-lg-2">
+          <section class="col">
+            <!-- Swiper -->
+            <!-- 上方所展示的大張圖片 -->
+            <div class="swiper productImageSwiper2 mb-1 mb-lg-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rounded-5 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一.jpeg" />
+                </div>
+                <div class="swiper-slide rounded-5 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一細節.png" />
+                </div>
+                <div class="swiper-slide rounded-5 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一細節 (1).png" />
+                </div>
+                <div class="swiper-slide rounded-5 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一細節 (2).png" />
+                </div>
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper productImageSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rounded-3 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一.jpeg" />
+                </div>
+                <div class="swiper-slide rounded-3 overflow-hidden">
+                  <img src="/assets/images/智能評估/04/方案一細節.png" />
+                </div>
+                <div class="swiper-slide rounded-3">
+                  <img src="/assets/images/智能評估/04/方案一細節 (1).png" />
+                </div>
+                <div class="swiper-slide rounded-3">
+                  <img src="/assets/images/智能評估/04/方案一細節 (2).png" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+            <div class="px-xl-10">
+              <h2 class="fs-6 fs-lg-5 text-gray-9 mt-8 mt-lg-6">
+                EcoSense 光控智能窗簾
+              </h2>
+              <!-- star & comments -->
+              <ul
+                class="mt-2 mt-lg-3 d-flex align-items-center list-unstyled gap-1"
+              >
+                <li>
+                  <i class="ph-fill ph-star text-yellow-3 fs-base"></i>
+                </li>
+                <li>
+                  <i class="ph-fill ph-star text-yellow-3 fs-base"></i>
+                </li>
+                <li>
+                  <i class="ph-fill ph-star text-yellow-3 fs-base"></i>
+                </li>
+                <li>
+                  <i class="ph ph-star text-yellow-3 fs-base"></i>
+                </li>
+                <li>
+                  <i class="ph ph-star text-yellow-3 fs-base"></i>
+                </li>
+                <li>•</li>
+                <li class="text-gray-5">10 則評論</li>
+              </ul>
+              <!-- discount & stock -->
+              <div class="d-flex gap-2 mb-3 mb-lg-6">
+                <p
+                  class="d-flex align-items-center bg-primary-1 py-1 px-3 rounded-5 text-primary-9"
+                >
+                  <i class="ph-bold ph-ticket fs-sm fs-lg-base me-1"></i
+                  ><span class="fs-xs fs-lg-sm fw-medium">九折優惠</span>
+                </p>
+                <p
+                  class="d-flex align-items-center bg-primary-1 py-1 px-3 rounded-5 text-primary-9"
+                >
+                  <i class="ph-bold ph-package fs-sm fs-lg-base me-1"></i
+                  ><span class="fs-xs fs-lg-sm fw-medium">有庫存</span>
+                </p>
+              </div>
+              <p class="price-fs fw-bold mb-3 mb-lg-6">$4,900</p>
+              <!-- form -->
+              <form class="my-3" action="">
+                <!-- 產品顏色選擇 -->
+                <section class="product-color mb-4">
+                  <p class="fs-base text-gray-9 mb-3">
+                    顏色<span class="text-red-6 ms-1">*</span>
+                  </p>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="btn btn-outline-primary py-2 px-5 rounded-5 btn-hover me-3"
+                    for="option1"
+                    >米白</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options"
+                    id="option2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary py-2 px-5 rounded-5 btn-hover me-3"
+                    for="option2"
+                    >灰色</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options"
+                    id="option3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary py-2 px-5 rounded-5 btn-hover me-3"
+                    for="option3"
+                    >深藍</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options"
+                    id="option4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary py-2 px-5 rounded-5 btn-hover"
+                    for="option4"
+                    >黑色</label
+                  >
+                </section>
+                <!-- size 選擇 -->
+                <section class="size-select mb-4">
+                  <label class="fs-base text-gray-9 mb-3" for="size-select"
+                    >窗簾尺寸（公分）<span class="text-red-6 ms-1"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    class="form-select input-select"
+                    id="size-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected disabled>請選擇</option>
+                    <option value="1">100 公分</option>
+                    <option value="2">200 公分</option>
+                    <option value="3">300 公分</option>
+                  </select>
+                </section>
+                <!-- 數量選擇 -->
+                <section class="number-circle mb-0 mb-lg-3">
+                  <p class="fs-base text-gray-9 mb-3">
+                    數量<span class="text-red-6 ms-1">*</span>
+                  </p>
+                  <div class="d-flex align-items-center gap-4">
+                    <!-- minus-button -->
+                    <button class="input-number">
+                      <i class="ph-bold ph-minus fs-sm"></i></button
+                    ><span class="fs-4 text-gray-9">1</span>
+                    <!-- plus-button -->
+                    <button class="input-number">
+                      <i class="ph-bold ph-plus fs-sm"></i>
+                    </button>
+                  </div>
+                </section>
+                <section
+                  class="d-flex flex-column flex-lg-row gap-3 mt-3 mt-lg-6"
+                >
+                  <a
+                    class="btn btn-primary fw-bold py-3 rounded-5 mw-33"
+                    href="#"
+                    ><i class="ph ph-wallet fs-5 align-bottom me-2"></i
+                    >直接購買</a
+                  ><a
+                    class="btn btn-outline-primary fw-bold py-3 rounded-5 mw-33 border-hover text-primary-6"
+                    href="#"
+                    ><i
+                      class="ph ph-shopping-cart-simple fs-5 align-bottom me-2"
+                    ></i
+                    >加入購物車</a
+                  ><a
+                    class="btn btn-outline-primary fw-bold py-3 rounded-5 mw-33 border-hover text-primary-6"
+                    href="#"
+                    ><i class="ph ph-heart fs-5 align-bottom me-2"></i
+                    >加入最愛</a
+                  >
+                </section>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
