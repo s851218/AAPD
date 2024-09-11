@@ -1,0 +1,70 @@
+// 產品規格
+// section-1
+.breadcrumb-item-hover {
+  color: $gray-400;
+}
+// discount & stock
+.price-fs {
+  font-size: 24px;
+  @media screen and (min-width: 992px) {
+    font-size: 36px;
+  }
+}
+
+// form
+.product-color {
+  .btn-hover {
+    font-size: 16px;
+    border: 1px solid;
+    &:hover {
+      box-shadow: 0 0 0 1px $primary-600;
+    }
+  }
+  input:checked + label {
+    font-weight: 600;
+    pointer-events: none; // 阻止 hover 效果產生
+  }
+}
+// hover的border變粗效果，防止跳動產生，參考資料：https://www.clloz.com/programming/front-end/css/2019/05/27/hover-border/
+
+.size-select {
+  .input-select {
+    padding: 12px 12px 12px 16px;
+    border-radius: 24px;
+    border: 1px solid $gray-900;
+    &:hover {
+      border: 1px solid $primary-600;
+    }
+  }
+}
+
+.number-circle {
+  .input-number {
+    background-color: $white;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid $gray-200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      background-color: transparent;
+      color: $primary-600;
+    }
+  }
+}
+
+.mw-33 {
+  @media screen and (min-width: 1200px) {
+    width: 188px;
+  }
+}
+
+.border-hover {
+  &:hover {
+    box-shadow: 0 0 0 1px $primary-600;
+  }
+}
