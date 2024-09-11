@@ -544,6 +544,7 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
+  14: $spacer * 3.5,
   15: $spacer * 3.75,
   16: $spacer * 4,
   20: $spacer * 5,
@@ -819,7 +820,10 @@ $font-sizes: (
   // 16px
   sm: $font-size-sm,
   // 14px
-  xs: $font-size-xs // 12px,,,,,,,,,
+  xs: $font-size-xs,
+  // 12px
+  l: 30px,
+  xl: 36px,
 ) !default;
 
 // scss-docs-end font-sizes
