@@ -229,6 +229,32 @@ const productImageSwiper2 = new Swiper(".productImageSwiper2", {
 });
 
 
+// 猜你喜歡
+const swiper = new Swiper(".likeSwiper", {
+  spaceBetween: 16,
+  slidesPerView: 1.1,
+  loop: true, // 循環播放
+
+  navigation: {
+    nextEl: ".like-swiper-button-next",
+    prevEl: ".like-swiper-button-prev",
+  },
+
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 20, // 每個內容之間的間隔為 8px
+      slidesPerView: 2.1,
+    },
+
+    1200: {
+      spaceBetween: 24, // 每個內容之間的間隔為 8px
+      slidesPerView: 3,
+    },
+  },
+});
+=======
+
 const planselectSwiper = new Swiper(".planselectSwiper", {
   slidesPerView: 1,
   //RWD
@@ -239,50 +265,4 @@ const planselectSwiper2 = new Swiper(".planselectSwiper2", {
     swiper: planselectSwiper,
   },
 });
-// test
 
-// let appendNumber = 5;
-// let prependNumber = 1;
-// const swiper = new Swiper('.testswiper', {
-//   slidesPerView: 1,
-//   centeredSlides: true,
-//   spaceBetween: 30,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'fraction',
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   virtual: {
-//     slides: (function () {
-//       const slides = [];
-//       for (var i = 0; i < 3; i += 1) {
-//         slides.push('Slide ' + (i + 1));
-//       }
-//       return slides;
-//     })(),
-//   },
-// });
-
-// document
-//   .querySelector('.slide-1')
-//   .addEventListener('click', function (e) {
-//     e.preventDefault();
-//     swiper.slideTo(0, 0);
-//   });
-
-// document
-//   .querySelector('.slide-2')
-//   .addEventListener('click', function (e) {
-//     e.preventDefault();
-//     swiper.slideTo(1, 0);
-//   });
-
-// document
-//   .querySelector('.slide-3')
-//   .addEventListener('click', function (e) {
-//     e.preventDefault();
-//     swiper.slideTo(2, 0);
-//   });
