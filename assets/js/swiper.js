@@ -226,3 +226,28 @@ const productImageSwiper2 = new Swiper(".productImageSwiper2", {
     swiper: productImageSwiper,
   },
 });
+
+// 猜你喜歡
+const swiper = new Swiper(".likeSwiper", {
+  spaceBetween: 16,
+  slidesPerView: 1.1,
+  loop: true, // 循環播放
+
+  navigation: {
+    nextEl: ".like-swiper-button-next",
+    prevEl: ".like-swiper-button-prev",
+  },
+
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 20, // 每個內容之間的間隔為 8px
+      slidesPerView: 2.1,
+    },
+
+    1200: {
+      spaceBetween: 24, // 每個內容之間的間隔為 8px
+      slidesPerView: 3,
+    },
+  },
+});
