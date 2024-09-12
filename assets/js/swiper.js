@@ -207,6 +207,7 @@ const indexSwiper3 = new Swiper(".indexSwiper3", {
   },
 });
 
+
 // product-info.html
 // 產品規格 section-1
 const productImageSwiper = new Swiper(".productImageSwiper", {
@@ -226,6 +227,7 @@ const productImageSwiper2 = new Swiper(".productImageSwiper2", {
     swiper: productImageSwiper,
   },
 });
+
 
 // 猜你喜歡
 const swiper = new Swiper(".likeSwiper", {
@@ -251,3 +253,16 @@ const swiper = new Swiper(".likeSwiper", {
     },
   },
 });
+=======
+
+const planselectSwiper = new Swiper(".planselectSwiper", {
+  slidesPerView: 1,
+  //RWD
+});
+// 上方所展示的大張圖片的swiper
+const planselectSwiper2 = new Swiper(".planselectSwiper2", {
+  thumbs: {
+    swiper: planselectSwiper,
+  },
+});
+
