@@ -207,6 +207,7 @@ const indexSwiper3 = new Swiper(".indexSwiper3", {
   },
 });
 
+
 // product-info.html
 // 產品規格 section-1
 const productImageSwiper = new Swiper(".productImageSwiper", {
@@ -226,3 +227,62 @@ const productImageSwiper2 = new Swiper(".productImageSwiper2", {
     swiper: productImageSwiper,
   },
 });
+
+
+const planselectSwiper = new Swiper(".planselectSwiper", {
+  slidesPerView: 1,
+  //RWD
+});
+// 上方所展示的大張圖片的swiper
+const planselectSwiper2 = new Swiper(".planselectSwiper2", {
+  thumbs: {
+    swiper: planselectSwiper,
+  },
+});
+// test
+
+// let appendNumber = 5;
+// let prependNumber = 1;
+// const swiper = new Swiper('.testswiper', {
+//   slidesPerView: 1,
+//   centeredSlides: true,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'fraction',
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   virtual: {
+//     slides: (function () {
+//       const slides = [];
+//       for (var i = 0; i < 3; i += 1) {
+//         slides.push('Slide ' + (i + 1));
+//       }
+//       return slides;
+//     })(),
+//   },
+// });
+
+// document
+//   .querySelector('.slide-1')
+//   .addEventListener('click', function (e) {
+//     e.preventDefault();
+//     swiper.slideTo(0, 0);
+//   });
+
+// document
+//   .querySelector('.slide-2')
+//   .addEventListener('click', function (e) {
+//     e.preventDefault();
+//     swiper.slideTo(1, 0);
+//   });
+
+// document
+//   .querySelector('.slide-3')
+//   .addEventListener('click', function (e) {
+//     e.preventDefault();
+//     swiper.slideTo(2, 0);
+//   });
