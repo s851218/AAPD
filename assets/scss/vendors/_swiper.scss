@@ -51,3 +51,24 @@
     background-color: $gray-300;
   }
 }
+
+
+// 智能評估頁面(4)
+.planselect4Swiper .swiper-slide {
+  opacity: 0.6;
+}
+
+.planselect4Swiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.planselect4_2Swiper .swiper-slide {
+  opacity: 0.6;
+}
+
+.planselect4_2Swiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  display: none;
+}

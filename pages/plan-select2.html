@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="plan-select-banner">
+      <div class="container pt-6 pb-0 py-lg-20">
+        <div class="row row-cols-lg-2 bg-secondary-1 bg-opacity-90 rounded-5">
+          <section class="col">
+            <!-- Swiper -->
+            <!-- 上方所展示的大張圖片 -->
+            <div class="d-block d-lg-none mt-6">
+              <div class="d-flex mb-8">
+                <div class="plan-select-text-dec-fill me-2"></div>
+                <div class="plan-select-text-dec-fill me-2"></div>
+                <div class="plan-select-text-dec"></div>
+              </div>
+              <div class="mb-9">
+                <a href="plan-select.html" class="py-3 px-4 link-gray-9 mb-2"><i class="ph ph-arrow-left me-2"></i>返回</a>
+                <h1 class="fs-5 fs-lg-l">您想要選擇什麼方案?</h1>
+              </div>
+            </div>
+            <div class="swiper planselect2Swiper2 rounded-5 ms-lg-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/01光感應圖.png" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/02溫度控制.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/03定時功能.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/04語音控制助手.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/05隱私和遮光功能.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/06遙控.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/03/07隔熱.jpeg" class="img-fluid h-100 w-100 object-fit-cover"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+            <div class="plan-select2-text">
+              <div class="d-none d-lg-block">
+                <div class="d-flex mb-9">
+                  <div class="plan-select-text-dec-fill me-2"></div>
+                  <div class="plan-select-text-dec-fill me-2"></div>
+                  <div class="plan-select-text-dec"></div>
+                </div>
+                <div class="mb-9">
+                  <a href="plan-select.html" class="py-3 px-4 link-gray-9"><i class="ph ph-arrow-left me-2"></i>返回</a>
+                  <h1 class="fs-5 fs-lg-l">您想要選擇什麼方案?</h1>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper planselect2Swiper">
+                <div class="swiper-wrapper d-flex flex-wrap  mx-auto">
+                  <div class="swiper-slide w-auto mb-3 me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 rounded-5" for="btn-check">光感應</label>
+                  </div>
+                  <div class="swiper-slide w-auto mb-3 me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 rounded-5" for="btn-check-2">溫度控制</label>
+                  </div>
+                  <div class="swiper-slide w-auto mb-3 me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 rounded-5" for="btn-check-3">定時控制</label>
+                  </div>
+                  <div class="swiper-slide w-auto mb-3 me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 rounded-5" for="btn-check-4">語音助手控制</label>
+                  </div>
+                  <div class="swiper-slide w-auto mb-3 me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 rounded-5" for="btn-check-5">隱私和遮光需求</label>
+                  </div>
+                  <div class="swiper-slide w-auto me-2 me-lg-3">
+                    <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 px-sm-8 rounded-5" for="btn-check-6">遙控</label>
+                  </div>
+                  <div class="swiper-slide w-auto mb-20">
+                    <input type="checkbox" class="btn-check" id="btn-check-7" autocomplete="off">
+                    <label class="btn btn-custom py-3 px-5 px-sm-8 rounded-5" for="btn-check-7">隔熱</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="plan-select3.html" class="btn btn-primary d-block mt-2">下一步</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    
+    <%- include('./layout/index-section'); -%>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

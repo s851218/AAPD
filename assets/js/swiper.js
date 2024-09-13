@@ -259,10 +259,118 @@ const planselectSwiper = new Swiper(".planselectSwiper", {
   slidesPerView: 1,
   //RWD
 });
-// 上方所展示的大張圖片的swiper
+
 const planselectSwiper2 = new Swiper(".planselectSwiper2", {
   thumbs: {
     swiper: planselectSwiper,
   },
 });
 
+const planselect2Swiper = new Swiper(".planselect2Swiper", {
+  slidesPerView: 7,
+  //RWD
+});
+
+const planselect2Swiper2 = new Swiper(".planselect2Swiper2", {
+  thumbs: {
+    swiper: planselect2Swiper,
+  },
+});
+
+//planselect4第一塊
+const planselect4Swiper = new Swiper(".planselect4Swiper", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 8, // 每個內容之間的間隔為 8px
+    },
+  },
+});
+// 上方所展示的大張圖片的swiper
+const planselect4Swiper2 = new Swiper(".planselect4Swiper2", {
+  spaceBetween: 4,
+  thumbs: {
+    swiper: planselect4Swiper,
+  },
+});
+
+//planselect4第二塊
+const planselect4_2Swiper = new Swiper(".planselect4_2Swiper", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 8, // 每個內容之間的間隔為 8px
+    },
+  },
+});
+// 上方所展示的大張圖片的swiper
+const planselect4_2Swiper2 = new Swiper(".planselect4_2Swiper2", {
+  spaceBetween: 4,
+  thumbs: {
+    swiper: planselect4_2Swiper,
+  },
+});
+
+//planselect4第三塊
+const planselect4_3Swiper = new Swiper(".planselect4_3Swiper", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  //RWD
+  breakpoints: {
+    992: {
+      spaceBetween: 8, // 每個內容之間的間隔為 8px
+    },
+  },
+});
+// 上方所展示的大張圖片的swiper
+const planselect4_3Swiper2 = new Swiper(".planselect4_3Swiper2", {
+  spaceBetween: 4,
+  thumbs: {
+    swiper: planselect4_3Swiper,
+  },
+});
+
+
+//planselect最外層的Swiper
+var planselect5Swiper = new Swiper(".planselect5Swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
+//992px以下的planselect
+const planselect6Swiper2 = new Swiper(".planselect6Swiper2", {
+  slidesPerView: 1, // 一次呈現幾張
+  slidesPerGroup: 1, // 一個群組內有幾張投影片
+  spaceBetween: 16, // 每個內容之間的間隔為 24px
+  //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
+
+  loop: true, // 循環播放
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // 左右箭頭 功能設定
+  navigation: {
+    nextEl: ".indexSwiper1-button-next",
+    prevEl: ".indexSwiper1-button-prev",
+  },
+
+  //RWD
+  breakpoints: {
+    992: {
+      slidesPerView: 3, // 一次呈現幾張
+      slidesPerGroup: 1, // 一個群組內有幾張投影片
+      spaceBetween: 24, // 每個內容之間的間隔為 48px
+      loop: true,
+    },
+  },
+});
