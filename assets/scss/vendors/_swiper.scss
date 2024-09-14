@@ -51,3 +51,69 @@
     background-color: $gray-300;
   }
 }
+
+
+// 智能評估頁面(4)
+.planselect4Swiper .swiper-slide {
+  opacity: 0.6;
+}
+
+.planselect4Swiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.planselect4_2Swiper .swiper-slide {
+  opacity: 0.6;
+}
+
+.planselect4_2Swiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.planselect5Swiper-button-prev{
+  border-radius: 100%;
+  border: 1px solid #4D4941;
+  position: absolute;
+  top:50%;
+  right:600px;
+  padding: 16px;
+  z-index: 1;
+  line-height: 1;
+  @media(max-width:1399px){
+      right:480px;
+  }
+  @media(max-width:1199px){
+    right:406px;
+  }
+}
+.planselect5Swiper-button-next{
+  border-radius: 100%;
+  border: 1px solid #4D4941;
+  position: absolute;
+  top:50%;
+  right:87px;
+  padding: 16px;
+  z-index: 1;
+  line-height: 1;
+  @media(max-width:1399px){
+      right:16px;
+  }
+  @media(max-width:1199px){
+    right:0px;
+}
+}
+.planselect5Swiper-button-prev.btn-outline-primary:focus{
+  color:$primary-700;
+  background-color: #f6faf3;
+  border: 1px solid #4D4941;
+}
+.planselect5Swiper-button-next.btn-outline-primary:focus{
+  color:$primary-700;
+  background-color: #f6faf3;
+  border: 1px solid #4D4941;
+}
+.planselect5Swiper-button-prev.swiper-button-disabled,.planselect5Swiper-button-prevswiper-button-disabled {
+  display: none;
+}
+.planselect5Swiper-button-next.swiper-button-disabled,.planselect5Swiper-button-prevswiper-button-disabled {
+  display: none;
+}

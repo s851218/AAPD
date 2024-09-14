@@ -1,0 +1,26 @@
+.plan-select3-text{
+    padding-right: 144px;
+    padding-left: 144px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media(max-width:1399px){
+        padding-right: 72px;
+        padding-left: 72px;
+    }
+    @media(max-width:1199px){
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    @media(max-width:992px){
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 24px;
+    }
+}
+.mb-planselect3{
+    margin-bottom: 204px;
+    @media(max-width:487px){
+        margin-bottom: 146px;
+    }
+}

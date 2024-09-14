@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="plan-select-banner">
+      <div class="container pt-6 pb-0 py-lg-20">
+        <div class="row row-cols-lg-2 bg-secondary-1 bg-opacity-90 rounded-5">
+          <section class="col">
+            <!-- Swiper -->
+            <!-- 上方所展示的大張圖片 -->
+            <div class="d-block d-lg-none mt-6">
+              <div class="d-flex mb-8">
+                <div class="plan-select-text-dec-fill me-2"></div>
+                <div class="plan-select-text-dec-fill me-2"></div>
+                <div class="plan-select-text-dec-fill"></div>
+              </div>
+              <div class="mb-9">
+                <a href="plan-select2.html" class="py-3 px-4 link-gray-9 mb-2"><i class="ph ph-arrow-left me-2"></i>返回</a>
+                <h1 class="fs-5 fs-lg-l">您想要選擇什麼方案?</h1>
+              </div>
+            </div>
+            <div class="swiper planselectSwiper2 rounded-5 ms-lg-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/02/01捲簾.png" class="img-fluid object-fit-cover w-100 h-100"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/02/02斑馬簾.jpeg" class="img-fluid object-fit-cover w-100 h-100"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/02/03蜂巢簾.jpeg" class="img-fluid object-fit-cover w-100 h-100"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/智能評估/02/04蜂巢日夜廉.jpeg" class="img-fluid object-fit-cover w-100 h-100"/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+            <div class="plan-select3-text">
+              <div class="d-none d-lg-block">
+                <div class="d-flex mb-9">
+                  <div class="plan-select-text-dec-fill me-2"></div>
+                  <div class="plan-select-text-dec-fill me-2"></div>
+                  <div class="plan-select-text-dec-fill"></div>
+                </div>
+                <div class="mb-9">
+                  <a href="plan-select2.html" class="py-3 px-4 link-gray-9"><i class="ph ph-arrow-left me-2"></i>返回</a>
+                  <h1 class="fs-5 fs-lg-l">您想要選擇什麼方案?</h1>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper planselectSwiper">
+                <div class="swiper-wrapper d-flex flex-wrap mx-auto">
+                  <div class="swiper-slide w-auto me-2 me-lg-3">
+                    <button class="btn btn-custom py-3 px-5 rounded-5 w-100">捲簾窗簾</button>
+                  </div>
+                  <div class="swiper-slide w-auto me-2 me-lg-3">
+                    <button class="btn btn-custom py-3 px-5 rounded-5 w-100">斑馬簾</button>
+                  </div>
+                  <div class="swiper-slide w-auto me-2 me-lg-3 mb-2">
+                    <button class="btn btn-custom py-3 px-5 rounded-5 w-100">蜂巢簾</button>
+                  </div>
+                  <div class="swiper-slide w-auto me-2 me-lg-3 mb-planselect3">
+                    <button class="btn btn-custom py-3 px-5 rounded-5 w-100">蜂巢日/夜簾</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="plan-select4.html" class="btn btn-primary d-block mt-2">下一步</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    
+    <%- include('./layout/index-section'); -%>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
