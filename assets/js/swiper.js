@@ -257,10 +257,18 @@ const swiper = new Swiper(".likeSwiper", {
 
 const planselectSwiper = new Swiper(".planselectSwiper", {
   slidesPerView: 1,
-  //RWD
+  navigation: {
+    nextEl: ".planselectSwiper-button-next",
+    prevEl: ".planselectSwiper-button-prev",
+  },
+
 });
 
 const planselectSwiper2 = new Swiper(".planselectSwiper2", {
+  navigation: {
+    nextEl: ".planselectSwiper2-button-next",
+    prevEl: ".planselectSwiper2-button-prev",
+  },
   thumbs: {
     swiper: planselectSwiper,
   },
@@ -268,10 +276,18 @@ const planselectSwiper2 = new Swiper(".planselectSwiper2", {
 
 const planselect2Swiper = new Swiper(".planselect2Swiper", {
   slidesPerView: 7,
+  navigation: {
+    nextEl: ".planselect2Swiper-button-next",
+    prevEl: ".planselect2Swiper-button-prev",
+  },
   //RWD
 });
 
 const planselect2Swiper2 = new Swiper(".planselect2Swiper2", {
+  navigation: {
+    nextEl: ".planselect2Swiper2-button-next",
+    prevEl: ".planselect2Swiper2-button-prev",
+  },
   thumbs: {
     swiper: planselect2Swiper,
   },
@@ -310,6 +326,7 @@ const planselect4_2Swiper = new Swiper(".planselect4_2Swiper", {
 // 上方所展示的大張圖片的swiper
 const planselect4_2Swiper2 = new Swiper(".planselect4_2Swiper2", {
   spaceBetween: 4,
+  autoHeight:true,
   thumbs: {
     swiper: planselect4_2Swiper,
   },
@@ -335,11 +352,12 @@ const planselect4_3Swiper2 = new Swiper(".planselect4_3Swiper2", {
 });
 
 
+
 //planselect最外層的Swiper
 var planselect5Swiper = new Swiper(".planselect5Swiper", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".planselect5Swiper-button-next",
+    prevEl: ".planselect5Swiper-button-prev",
   },
 });
 
@@ -360,8 +378,8 @@ const planselect6Swiper2 = new Swiper(".planselect6Swiper2", {
 
   // 左右箭頭 功能設定
   navigation: {
-    nextEl: ".indexSwiper1-button-next",
-    prevEl: ".indexSwiper1-button-prev",
+    nextEl: ".planselect6Swiper2-button-next",
+    prevEl: ".planselect6Swiper2-button-prev",
   },
 
   //RWD
