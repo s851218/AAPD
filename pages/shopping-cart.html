@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartSync購物車</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- progress section-1 -->
+    <section class="py-6 py-lg-8">
+      <div class="container">
+        <!-- return -->
+        <a class="text-primary-9" href="product-info.html">
+          <i class="ph ph-arrow-left fs-5 align-bottom me-3"></i
+          ><span>返回</span>
+        </a>
+        <!-- progress -->
+        <section class="progress-bg mt-6 mt-lg-8 d-none d-lg-block">
+          <div class="position-relative m-4 mx-auto progress-bar-width">
+            <div class="progress bg-gray-4" style="height: 1px">
+              <div
+                class="progress-bar bg-primary-6"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <!-- step-1 -->
+            <section
+              class="position-absolute top-0 start-0 translate-middle step-item"
+            >
+              <p class="fs-sm lh-1">1</p>
+            </section>
+            <div
+              class="position-absolute mt-2 text-center"
+              style="top: 14px; left: -20px"
+            >
+              <p class="fs-sm fw-bolder text-primary-6">Step 1</p>
+              <p class="fs-sm text-primary-6">首頁</p>
+            </div>
+            <!-- step-2 -->
+            <section
+              style="left: 25%"
+              class="position-absolute top-0 translate-middle step-item"
+            >
+              <p class="fs-sm lh-1">2</p>
+            </section>
+            <div
+              class="position-absolute translate-middle-x mt-2 text-center"
+              style="top: 14px; left: 25%"
+            >
+              <p class="fs-sm fw-bolder text-primary-6">Step 2</p>
+              <p class="fs-sm text-primary-6">商品資訊</p>
+            </div>
+            <!-- step-3 -->
+            <section
+              class="position-absolute top-0 start-50 translate-middle step-item-active"
+            >
+              <p class="fs-sm lh-1">3</p>
+            </section>
+            <div
+              class="position-absolute translate-middle-x mt-2 text-center"
+              style="top: 14px; left: 50%"
+            >
+              <p class="fs-sm fw-bolder text-primary-6">Step 3</p>
+              <p class="fs-sm text-primary-6">加入購物車</p>
+            </div>
+            <!-- step-4 -->
+            <section
+              style="left: 75%"
+              class="position-absolute top-0 translate-middle step-item-disabled"
+            >
+              <p class="fs-sm lh-1">4</p>
+            </section>
+            <div
+              class="position-absolute translate-middle-x mt-2 text-center"
+              style="top: 14px; left: 75%"
+            >
+              <p class="fs-sm fw-bolder text-gray-4">Step 4</p>
+              <p class="fs-sm text-gray-4">確認訂單</p>
+            </div>
+            <!-- step-5 -->
+            <section
+              class="position-absolute top-0 start-100 translate-middle step-item-disabled"
+            >
+              <p class="fs-sm lh-1">5</p>
+            </section>
+            <div
+              class="position-absolute translate-middle-x mt-2 text-center"
+              style="top: 14px; right: -55px"
+            >
+              <p class="fs-sm fw-bolder text-gray-4">Step 5</p>
+              <p class="fs-sm text-gray-4">完成訂單</p>
+            </div>
+          </div>
+        </section>
+        <!-- mobile-progress -->
+        <section class="progress-mobile-bg mt-6 d-block d-lg-none mx-auto">
+          <ul class="list-unstyled">
+            <!-- step-1 -->
+            <li
+              class="border-start border-primary-6 position-relative"
+              style="height: 68px"
+            >
+              <section class="position-absolute" style="top: 0; left: -12px">
+                <span class="step-item">1</span>
+              </section>
+              <section class="position-absolute" style="top: 0; left: 24px">
+                <p class="fw-bold text-primary-6 text-nowrap">Step 1</p>
+                <p class="fs-sm text-primary-6">首頁</p>
+              </section>
+            </li>
+            <!-- step-2 -->
+            <li
+              class="border-start border-primary-6 position-relative"
+              style="height: 68px"
+            >
+              <section class="position-absolute" style="top: 0; left: -12px">
+                <span class="step-item">2</span>
+              </section>
+              <section class="position-absolute" style="top: 0; left: 24px">
+                <p class="fw-bold text-primary-6 text-nowrap">Step 2</p>
+                <p class="fs-sm text-primary-6 text-nowrap">商品資訊</p>
+              </section>
+            </li>
+            <!-- step-3 -->
+            <li
+              class="border-start border-gray-4 position-relative"
+              style="height: 68px"
+            >
+              <section class="position-absolute" style="top: 0; left: -12px">
+                <span class="step-item-active">3</span>
+              </section>
+              <section class="position-absolute" style="top: 0; left: 24px">
+                <p class="fw-bold text-primary-6 text-nowrap">Step 3</p>
+                <p class="fs-sm text-primary-6 text-nowrap">加入購物車</p>
+              </section>
+            </li>
+            <!-- step-4 -->
+            <li
+              class="border-start border-gray-4 position-relative"
+              style="height: 68px"
+            >
+              <section class="position-absolute" style="top: 0; left: -12px">
+                <span class="step-item-disabled">4</span>
+              </section>
+              <section class="position-absolute" style="top: 0; left: 24px">
+                <p class="fw-bold text-gray-4 text-nowrap">Step 4</p>
+                <p class="fs-sm text-gray-4 text-nowrap">確認訂單</p>
+              </section>
+            </li>
+            <!-- step-5 -->
+            <li class="position-relative" style="height: 68px">
+              <section class="position-absolute" style="top: 0; left: -12px">
+                <span class="step-item-disabled">5</span>
+              </section>
+              <section class="position-absolute" style="top: 0; left: 24px">
+                <p class="fw-bold text-gray-4 text-nowrap">Step 5</p>
+                <p class="fs-sm text-gray-4 text-nowrap">完成訂單</p>
+              </section>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- shopping-cart section-2 -->
+    <section class="pb-6 pb-lg-8">
+      <div class="container">
+        <h3 class="fs-5 text-primary-9 fw-bolder mb-6 mb-lg-8">
+          <i class="ph ph-shopping-cart-simple fs-5 me-2"></i>購物車
+        </h3>
+        <div class="row">
+          <div class="col-lg-8">
+            <section class="checkAllWrap py-4 ps-4 border-bottom border-gray-4">
+              <div class="formGroup">
+                <input type="checkbox" class="checkAll" />
+                <label class="ms-6">選擇全部</label>
+              </div>
+            </section>
+            <!-- 1 -->
+            <section class="py-4 ps-4 border-bottom border-gray-4">
+              <div
+                class="d-flex justify-content-between align-items-start align-items-lg-center flex-column flex-md-row"
+              >
+                <!-- checkbox & img & product-name -->
+                <div class="d-flex mb-2 mb-lg-0">
+                  <input type="checkbox" name="sort" value="shopping-cart-1" />
+                  <ul
+                    class="list-unstyled d-flex align-items-center ms-6 gap-3 gap-lg-6 mb-0"
+                  >
+                    <li>
+                      <img
+                        class="object-fit-cover rounded-4"
+                        style="width: 80px; height: 80px"
+                        src="/assets/images/產品圖-今日優惠-智能窗簾.png"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <label for="">
+                        <h5 class="fs-7 fw-bolder text-gray-9">
+                          EcoSense光控智能窗簾
+                        </h5>
+                      </label>
+                      <p class="text-gray-5">米白，標準</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- input-number & price & icon -->
+                <ul
+                  class="list-unstyled d-flex flex-column flex-xl-row gap-2 gap-lg-6 mt-2 mt-lg-0 mb-0 ms-9 ms-lg-0"
+                >
+                  <li class="shopping-cart-number-circle">
+                    <div class="d-flex align-items-center gap-4">
+                      <!-- minus-button -->
+                      <button class="input-number">
+                        <i class="ph-bold ph-minus fs-xs"></i></button
+                      ><span class="fs-7 text-gray-9">1</span>
+                      <!-- plus-button -->
+                      <button class="input-number">
+                        <i class="ph-bold ph-plus fs-xs"></i>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="fs-7 text-gray-9 fw-bolder">$4,900</li>
+                  <li class="d-flex gap-1 ms-xl-2">
+                    <a
+                      class="d-flex align-items-center py-1 pe-2 text-nowrap text-gray-9"
+                      href="#"
+                    >
+                      <i class="ph ph-heart fs-base me-2"></i
+                      ><span class="fs-sm">加入最愛</span>
+                    </a>
+                    <a
+                      class="d-flex align-items-center py-1 px-2 text-nowrap text-gray-9"
+                      href="#"
+                    >
+                      <i class="ph ph-trash-simple fs-base me-2"></i
+                      ><span class="fs-sm">移除</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- 2 -->
+            <section class="py-4 ps-4 border-bottom border-gray-4">
+              <div
+                class="d-flex justify-content-between align-items-start align-items-lg-center flex-column flex-md-row"
+              >
+                <!-- checkbox & img & product-name -->
+                <div class="d-flex mb-2 mb-lg-0">
+                  <input type="checkbox" name="sort" value="shopping-cart-2" />
+                  <ul
+                    class="list-unstyled d-flex align-items-center ms-6 gap-3 gap-lg-6 mb-0"
+                  >
+                    <li>
+                      <img
+                        class="object-fit-cover rounded-4"
+                        style="width: 80px; height: 80px"
+                        src="/assets/images/購物車-語音助理.png"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <label for="">
+                        <h5 class="fs-7 fw-bolder text-gray-9">
+                          EcoSense光控智能窗簾
+                        </h5>
+                      </label>
+                      <p class="text-gray-5">米白，標準</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- input-number & price & icon -->
+                <ul
+                  class="list-unstyled d-flex flex-column flex-xl-row gap-2 gap-lg-6 mt-2 mt-lg-0 mb-0 ms-9 ms-lg-0"
+                >
+                  <li class="shopping-cart-number-circle">
+                    <div class="d-flex align-items-center gap-4">
+                      <!-- minus-button -->
+                      <button class="input-number">
+                        <i class="ph-bold ph-minus fs-xs"></i></button
+                      ><span class="fs-7 text-gray-9">1</span>
+                      <!-- plus-button -->
+                      <button class="input-number">
+                        <i class="ph-bold ph-plus fs-xs"></i>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="fs-7 text-gray-9 fw-bolder">$9,900</li>
+                  <li class="d-flex gap-1 ms-xl-2">
+                    <a
+                      class="d-flex align-items-center py-1 pe-2 text-nowrap text-gray-9"
+                      href="#"
+                    >
+                      <i class="ph ph-heart fs-base me-2"></i
+                      ><span class="fs-sm">加入最愛</span>
+                    </a>
+                    <a
+                      class="d-flex align-items-center py-1 px-2 text-nowrap text-gray-9"
+                      href="#"
+                    >
+                      <i class="ph ph-trash-simple fs-base me-2"></i
+                      ><span class="fs-sm">移除</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <!-- 訂單總覽 -->
+            <section
+              class="pt-6 pb-10 pb-lg-8 px-6 bg-secondary-1 rounded-5 mt-12 mt-lg-0"
+            >
+              <ul class="list-unstyled mb-0">
+                <li class="mb-6 mb-4">
+                  <h3 class="d-flex align-items-center fs-6 text-primary-9">
+                    <i class="ph ph-clipboard-text fs-5 me-2"></i>訂單總覽
+                  </h3>
+                </li>
+                <li class="d-flex justify-content-between mb-4">
+                  <span class="text-gray-5">商品金額</span
+                  ><span class="text-gray-9 fw-bold">$14,800</span>
+                </li>
+                <li class="d-flex justify-content-between mb-4">
+                  <span class="text-gray-5">折扣</span
+                  ><span class="text-red-6 fw-bold">$-299</span>
+                </li>
+                <li class="d-flex justify-content-between mb-4">
+                  <span class="text-gray-5">運費</span
+                  ><span class="text-gray-9 fw-bold">$99</span>
+                </li>
+                <li
+                  class="d-flex justify-content-between pb-2 border-bottom border-secondary-4"
+                >
+                  <span class="text-gray-5">稅</span
+                  ><span class="text-gray-9 fw-bold">$799</span>
+                </li>
+                <li class="d-flex justify-content-between mt-2 mb-6">
+                  <span class="text-gray-5">總金額</span
+                  ><span class="text-gray-9 fw-bold">$14,402</span>
+                </li>
+                <li class="mb-4">
+                  <a
+                    class="btn btn-primary py-2 py-lg-3 rounded-5 w-100"
+                    href="order-confirmation.html"
+                    >下一步</a
+                  >
+                </li>
+                <li>
+                  <span class="text-gray-9 me-1">或</span
+                  ><a class="text-gray-6" href="index.html"
+                    ><span class="text-decoration-underline">繼續購物</span
+                    ><i class="ph ph-arrow-right fs-base ms-2"></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+            <!-- 優惠券 -->
+            <section class="p-6 bg-secondary-1 rounded-5 mt-12 mt-lg-4">
+              <h3 class="d-flex align-items-center mb-4">
+                <i class="ph ph-ticket fs-5 text-primary-9 me-2"></i
+                ><span class="fs-6 fw-bolder text-primary-9">使用優惠券</span>
+              </h3>
+              <div class="d-flex flex-xxl-nowrap flex-column flex-xl-row">
+                <span class="me-0 me-xl-3 mb-3 mb-xl-0">
+                  <input
+                    type="text"
+                    class="py-2 py-lg-3 ps-4 pe-3 rounded-5 discount-w"
+                    placeholder="輸入優惠卷或折扣代碼"
+                  />
+                </span>
+                <span>
+                  <a
+                    class="btn btn-primary rounded-5 py-2 py-lg-3 text-nowrap discount-btn-w"
+                    href="#"
+                    >立即使用</a
+                  >
+                </span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 猜您喜歡 section-3 -->
+    <section>
+      <div class="container">
+        <div class="py-6 py-lg-8 border-top border-gray-4">
+          <%- include('./layout/guessLikeSwiper'); -%>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
