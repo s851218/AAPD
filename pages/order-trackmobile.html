@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>確認訂單</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+
+    <section class="py-6 py-lg-8">
+      <div class="container">
+        <div class="mb-6 mb-lg-15">
+          <a class="text-primary-9 d-inline-block mb-2" href="order-track.html">
+            <i class="ph ph-arrow-left fs-5 align-bottom me-3"></i><span>返回</span>
+          </a>
+          <div class="d-flex align-items-center">
+            <i class="ph ph-clipboard-text text-primary-8 me-3 fs-5"></i>
+            <h1 class="fs-5 text-primary-9">訂單 #957684673</h1>
+          </div>
+        </div>
+        <div class="d-flex px-4 py-9 bg-white bg-opacity-75 rounded-5">
+          <div class="d-flex flex-column me-3">
+            <i class="ph ph-shopping-cart-simple fs-5 text-primary-6"></i>
+            <div class="position-relative mx-3">
+              <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:44px;">
+                <div class="progress-bar" style="width: 1px;height:100%"></div>
+              </div>
+            </div>
+            <i class="ph ph-package fs-5 text-primary-6"></i>
+            <div class="position-relative mx-3">
+              <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:44px;">
+                <div class="progress-bar" style="width: 1px;height:100%"></div>
+              </div>
+            </div>
+            <i class="ph ph-truck fs-5 text-primary-6"></i>
+            <div class="position-relative mx-3">
+              <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:44px;">
+                <div class="progress-bar" style="width: 1px;height:100%"></div>
+              </div>
+            </div>
+            <i class="ph ph-spinner-gap fs-5 text-primary-6"></i>
+            <div class="position-relative mx-3">
+              <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:44px;">
+                <div class="progress-bar" style="width: 1px;height:0%"></div>
+              </div>
+            </div>
+            <i class="ph ph-mailbox fs-5 text-gray-3"></i>
+            <div class="position-relative mx-3">
+              <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:44px;">
+                <div class="progress-bar" style="width: 1px;height:0%"></div>
+              </div>
+            </div>
+            <i class="ph ph-handshake fs-5 text-gray-3"></i>
+          </div>
+          <div>
+            <ul class="list-unstyled d-flex flex-column justify-content-between">
+              <li class="d-flex flex-column mb-6">
+                <h2 class="fs-base fw-bold text-primary-6">買家下單</h2>
+                <p class="fs-sm text-gray-5">11月24日 13:11</p>
+              </li>
+              <li class="d-flex flex-column mb-6">
+                <h2 class="fs-base fw-bold text-primary-6">確認訂單後出貨</h2>
+                <p class="fs-sm text-gray-5">11月24日 17:50</p>
+              </li>
+              <li class="d-flex flex-column mb-5">
+                <h2 class="fs-base fw-bold text-primary-6">送往理貨中心</h2>
+                <p class="fs-sm text-gray-5">送往理貨中心</p>
+              </li>
+              <li class="d-flex flex-column mb-6">
+                <h2 class="fs-base fw-bold text-primary-6">處理中</h2>
+                <p class="fs-sm text-gray-5">11月26日 08:46</p>
+              </li>
+              <li class="d-flex flex-column mb-11">
+                <h2 class="fs-base fw-bold text-gray-4">包裹已配達</h2>
+              </li>
+              <li class="d-flex flex-column ">
+                <h2 class="fs-base fw-bold text-gray-4">買家取件成功</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
