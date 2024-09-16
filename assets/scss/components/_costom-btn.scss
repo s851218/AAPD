@@ -44,7 +44,7 @@
     $color: $primary-600,
     $color-hover: $primary-400,
     $hover-background: $primary-50,
-    $hover-border:  $primary-400,
+    $hover-border: $primary-400,
     $active-background: $primary-400,
     $active-border: $primary-200,
     $active-color: $white
@@ -55,7 +55,7 @@
     border-color: $primary-200;
     background-color: $primary-200;
   }
-  &:focus{
+  &:focus {
     background: $primary-400;
     color: $white;
     border-color: $primary-200;
@@ -68,7 +68,7 @@
     $color: $secondary-900,
     $color-hover: $white,
     $hover-background: $secondary-600,
-    $hover-border:  $secondary-200,
+    $hover-border: $secondary-200,
     $active-background: $secondary-800,
     $active-border: $secondary-300,
     $active-color: $white
@@ -79,7 +79,7 @@
     border-color: $secondary-200;
     background-color: $secondary-200;
   }
-  &:focus{
+  &:focus {
     background: $secondary-800;
     color: $white;
     border-color: $secondary-300;
@@ -87,6 +87,7 @@
 }
 
 .btn-custom {
+  border: 2px solid transparent;
   @include button-variant(
     $background: $white,
     $border: $gray-200,
@@ -101,18 +102,18 @@
     $disabled-border: $gray-200,
     $disabled-color: $gray-400
   );
-  &:active{
-    border:2px solid;
+  &:active {
+    border: 2px solid;
   }
-  &:focus{
-    background: #FFFFFF;
+  &:focus {
+    background: #ffffff;
     color: $primary-600;
     border-color: $gray-100;
   }
 }
 
 .btn-text {
-  border:0px;
+  border: 1px solid transparent;
   @include button-variant(
     $background: $secondary-50,
     $border: $secondary-50,
@@ -127,13 +128,13 @@
     $disabled-border: $gray-300,
     $disabled-color: $white
   );
-  &:hover{
-    border:0px;
+  // &:hover {
+  //   border: 0px;
+  // }
+  &:focus {
+    color: $gray-400;
   }
-  &:focus{
-    color:$gray-400;
-  }
-  &:active{
-    border:1px solid;
+  &:active {
+    border: 1px solid;
   }
 }
