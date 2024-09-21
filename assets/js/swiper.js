@@ -256,7 +256,7 @@ const swiper = new Swiper(".likeSwiper", {
 
 
 const planselectSwiper = new Swiper(".planselectSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 3,
   navigation: {
     nextEl: ".planselectSwiper-button-next",
     prevEl: ".planselectSwiper-button-prev",
@@ -290,6 +290,25 @@ const planselect2Swiper2 = new Swiper(".planselect2Swiper2", {
   },
   thumbs: {
     swiper: planselect2Swiper,
+  },
+});
+
+const planselect3Swiper = new Swiper(".planselect3Swiper", {
+  slidesPerView: 4,
+  navigation: {
+    nextEl: ".planselectSwiper-button-next",
+    prevEl: ".planselectSwiper-button-prev",
+  },
+
+});
+
+const planselect3Swiper2 = new Swiper(".planselect3Swiper2", {
+  navigation: {
+    nextEl: ".planselectSwiper2-button-next",
+    prevEl: ".planselectSwiper2-button-prev",
+  },
+  thumbs: {
+    swiper: planselect3Swiper,
   },
 });
 

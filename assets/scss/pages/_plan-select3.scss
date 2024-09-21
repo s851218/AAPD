@@ -1,3 +1,14 @@
+.swiper.planselect3Swiper2 {
+    height: 576px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    @media (max-width: 992px) {
+      height: 260px;
+    }
+    @media (max-width: 768px) {
+      height: 240px;
+    }
+  }
 .plan-select3-text{
     padding-right: 144px;
     padding-left: 144px;
