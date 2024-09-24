@@ -40,8 +40,8 @@
   background-position: right center;
   width: auto;
   height: 884px;
-  @media (max-width: 768px) {
-    height: 820px;
+  @media (max-width: 767px) {
+    height: 600px;
     margin-bottom: 24px;
     background-position: 95%;
     border-radius: 0 0 24px 24px;
@@ -55,12 +55,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: RGBA(255, 255, 255, 0.2);
-  opacity: 0;
+  background-color: RGBA(255, 255, 255, 0.15);
+  opacity: 1;
   transition: opacity 0.3s;
   border-radius: 24px;
 }
 .card-topic:hover::after {
+  background-color: RGBA(255, 255, 255, 0.65);
   opacity: 1;
   cursor: pointer;
 }
@@ -95,9 +96,6 @@
 }
 .mb-index {
   margin-bottom: 74px;
-  @media (max-width: 768px) {
-    margin-bottom: 300px;
-  }
 }
 
 //第一個裝飾
@@ -401,14 +399,17 @@
   padding-bottom: 12px;
   padding-left: 18px;
   padding-right: 18px;
-  @media (max-width: 768px) {
-    top: 155px;
-    left: 210px;
+  @media (max-width: 767px) {
+    top: 95px;
+    left: 240px;
   }
   @media (max-width: 576px) {
-    left: 130px;
+    left: 180px;
   }
   @media (max-width: 515px) {
+    left: 130px;
+  }
+  @media (max-width: 459px) {
     left: 80px;
   }
   @media (max-width: 420px) {
@@ -423,14 +424,17 @@
   height: 20px;
   border-radius: 100%;
   background-color: #ffffff;
-  @media (max-width: 768px) {
-    top: 225px;
-    left: 490px;
+  @media (max-width: 767px) {
+    top: 165px;
+    left: 520px;
   }
   @media (max-width: 576px) {
-    left: 410px;
+    left: 460px;
   }
   @media (max-width: 515px) {
+    left: 410px;
+  }
+  @media (max-width: 459px) {
     left: 360px;
   }
   @media (max-width: 420px) {
@@ -451,14 +455,17 @@
   left: 615px;
   width: 50px;
   height: 50px;
-  @media (max-width: 768px) {
-    top: 195px;
-    left: 460px;
+  @media (max-width: 767px) {
+    top: 135px;
+    left: 490px;
   }
   @media (max-width: 576px) {
-    left: 380px;
+    left: 430px;
   }
   @media (max-width: 515px) {
+    left: 380px;
+  }
+  @media (max-width: 459px) {
     left: 330px;
   }
   @media (max-width: 420px) {

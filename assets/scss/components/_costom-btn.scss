@@ -108,7 +108,28 @@
   &:focus {
     background: #ffffff;
     color: $primary-600;
-    border-color: $gray-100;
+    border-color: $primary-600;
+  }
+}
+
+.btn-custom1{
+  border: 2px solid transparent;
+  @include button-variant(
+    $background: $white,
+    $border: $gray-200,
+    $color: #111928,
+    $hover-background: $gray-100,
+    $hover-border: $gray-200,
+    $hover-color: $primary-600,
+    $active-background: $white,
+    $active-border: $primary-600,
+    $active-color: $primary-600,
+    $disabled-background: $gray-200,
+    $disabled-border: $gray-200,
+    $disabled-color: $gray-400
+  );
+  &:active {
+    border: 2px solid;
   }
 }
 
@@ -132,7 +153,9 @@
   //   border: 0px;
   // }
   &:focus {
-    color: $gray-400;
+    color: $gray-900;
+    background: $white;
+    border-color: $gray-900;
   }
   &:active {
     border: 1px solid;

@@ -31,7 +31,7 @@ const mySwiper2 = new Swiper(".mySwiper2", {
 // 首頁
 
 const featureSwiper = new Swiper(".featureSwiper", {
-  slidesPerView: 2, // 一次呈現幾張
+  slidesPerView: 2.2, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -115,7 +115,7 @@ const searchSwiper = new Swiper(".searchSwiper", {
 });
 
 const indexSwiper1 = new Swiper(".indexSwiper1", {
-  slidesPerView: 1, // 一次呈現幾張
+  slidesPerView: 1.1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -146,7 +146,7 @@ const indexSwiper1 = new Swiper(".indexSwiper1", {
 });
 
 const indexSwiper2 = new Swiper(".indexSwiper2", {
-  slidesPerView: 1, // 一次呈現幾張
+  slidesPerView: 1.1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -177,7 +177,7 @@ const indexSwiper2 = new Swiper(".indexSwiper2", {
 });
 
 const indexSwiper3 = new Swiper(".indexSwiper3", {
-  slidesPerView: 1, // 一次呈現幾張
+  slidesPerView: 1.1, // 一次呈現幾張
   slidesPerGroup: 1, // 一個群組內有幾張投影片
   spaceBetween: 16, // 每個內容之間的間隔為 24px
   //間隔的設置通過 JavaScript 傳遞到數據庫，然後返回並應用，而不是通過本地 CSS 設置。
@@ -265,6 +265,7 @@ const planselectSwiper = new Swiper(".planselectSwiper", {
 });
 
 const planselectSwiper2 = new Swiper(".planselectSwiper2", {
+  cssMode: true,
   navigation: {
     nextEl: ".planselectSwiper2-button-next",
     prevEl: ".planselectSwiper2-button-prev",
@@ -284,6 +285,7 @@ const planselect2Swiper = new Swiper(".planselect2Swiper", {
 });
 
 const planselect2Swiper2 = new Swiper(".planselect2Swiper2", {
+  cssMode: true,
   navigation: {
     nextEl: ".planselect2Swiper2-button-next",
     prevEl: ".planselect2Swiper2-button-prev",
@@ -303,6 +305,7 @@ const planselect3Swiper = new Swiper(".planselect3Swiper", {
 });
 
 const planselect3Swiper2 = new Swiper(".planselect3Swiper2", {
+  cssMode: true,
   navigation: {
     nextEl: ".planselectSwiper2-button-next",
     prevEl: ".planselectSwiper2-button-prev",
