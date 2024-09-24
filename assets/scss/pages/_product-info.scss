@@ -17,7 +17,9 @@
     font-size: 16px;
     border: 1px solid;
     &:hover {
-      box-shadow: 0 0 0 1px $primary-600;
+      color: $primary-400;
+      border: 1px solid $primary-400;
+      box-shadow: 0 0 0 1px $primary-400;
     }
   }
   input:checked + label {
@@ -40,6 +42,7 @@
 
 .number-circle {
   .input-number {
+    color: $gray-900;
     background-color: $white;
     width: 34px;
     height: 34px;
@@ -65,7 +68,7 @@
 
 .border-hover {
   &:hover {
-    box-shadow: 0 0 0 1px $primary-600;
+    box-shadow: 0 0 0 1px $primary-400;
   }
 }
 
