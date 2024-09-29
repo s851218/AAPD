@@ -377,10 +377,18 @@ const planselect4_3Swiper2 = new Swiper(".planselect4_3Swiper2", {
 
 //planselect最外層的Swiper
 var planselect5Swiper = new Swiper(".planselect5Swiper", {
+  slidesPerView: 1,
+  spaceBetween: 32,
   navigation: {
     nextEl: ".planselect5Swiper-button-next",
     prevEl: ".planselect5Swiper-button-prev",
   },
+  // breakpoints: {
+  //   992: {
+  //     slidesPerView: 1.1, // 一次呈現幾張
+  //     spaceBetween: 32, // 每個內容之間的間隔為 48px
+  //   },
+  // },
 });
 
 

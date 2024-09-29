@@ -55,13 +55,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: RGBA(255, 255, 255, 0.15);
+  background-color: RGBA(0, 0, 0, 0.15);
   opacity: 1;
   transition: opacity 0.3s;
   border-radius: 24px;
 }
 .card-topic:hover::after {
-  background-color: RGBA(255, 255, 255, 0.65);
+  background-color: RGBA(0, 0, 0, 0.65);
   opacity: 1;
   cursor: pointer;
 }
