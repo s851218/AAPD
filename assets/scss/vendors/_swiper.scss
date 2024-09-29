@@ -74,15 +74,24 @@
   border: 1px solid #4D4941;
   position: absolute;
   top:50%;
-  right:610px;
+  right:100%;
   padding: 16px;
   z-index: 1;
   line-height: 1;
+  @media(max-width:1505px){
+    right:96%;
+  }
   @media(max-width:1399px){
-      right:490px;
+    right:100%;
+  }
+  @media(max-width:1255px){
+    right:96%;
   }
   @media(max-width:1199px){
-      right:420px;
+    right:100%;
+  }
+  @media(max-width:1075px){
+    right:95%;
   }
 }
 .planselect5Swiper-button-next{
@@ -90,16 +99,25 @@
   border: 1px solid #4D4941;
   position: absolute;
   top:50%;
-  right:87px;
+  left:100%;
   padding: 16px;
   z-index: 1;
   line-height: 1;
+  @media(max-width:1505px){
+    left:96%;
+  }
   @media(max-width:1399px){
-      right:16px;
+    left:100%;
+  }
+  @media(max-width:1255px){
+    left:96%;
   }
   @media(max-width:1199px){
-    right:0px;
-}
+    left:100%;
+  }
+  @media(max-width:1075px){
+    left:95%;
+  }
 }
 .planselect5Swiper-button-prev.btn-outline-primary:focus{
   color:$primary-700;
